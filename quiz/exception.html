@@ -26,7 +26,7 @@
       const squareRoots = numbers.map(number => {
         try {
           if (number < 0) {
-            throw Error("Negative number")
+            throw new Error("Negative number")
           }
           Math.sqrt(number);          
         } catch (e) {
