@@ -25,11 +25,10 @@
       // Use Math.sqrt(number) to calculate sq root
       const squareRoots = numbers.map(number => {
         try {
-          Math.sqrt(number);
-
-          if(number < 0) {
+          if (number < 0) {
             throw Error("Negative number")
           }
+          Math.sqrt(number);          
         } catch (e) {
           console.log(e);
         }
