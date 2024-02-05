@@ -5,7 +5,8 @@ const originalMatrix = [
     [7, 9, 8]
   ];
   
-  const newMatrix = originalMatrix.map((row) => {
+  let newMatrix = Array.from(originalMatrix)
+  newMatrix = newMatrix.map((row) => {
     return row.sort();
   });
   
